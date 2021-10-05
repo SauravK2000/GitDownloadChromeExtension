@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>PG Mailer</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap.min.js"></script>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container" style="padding: 10px;width: 280px;">
+        <nav class="navbar navbar-dark bg-dark justify-content-center">
+            <h3 class="navbar-brand" style="white-space: nowrap;padding: 0px;margin: 0px;"><img src="img/git-white.png" alt="PG Git Downloader" width="100px" height="100px" style="margin-left: 27%;"><br/><u>PG Github Downloader</u></h3>
+            <h6 style="color: white;text-align: center;">(Download any specified Folder or File from any Github Repo)</h6>
+        </nav>
+        <br>
+        <div id="download" style="text-align: center;display: none;">
+            <span id="repo">Repository :</span>
+            <div class="scrollmenu" id="repo-scroll">/</div>
+            <br>
+            <span id="dir">Directory :</span>
+            <div class="scrollmenu" id="dir-scroll">/</div>
+            <br>
+            <button type="button" style="display: none;" id="down_btn_file" class="btn btn-success">Download File &nbsp; &nbsp;<i class="fa fa-download" aria-hidden="true"></i></button>
+            <button type="button" id="down_btn" class="btn btn-success">Generate Zip &nbsp; &nbsp;<i id="down_icon" class="fa fa-file-archive-o" aria-hidden="true"></i></button>
+            <a href="" id="download_link_btn" class="btn btn-success" style="display: none;">Download &nbsp; &nbsp;<i id="down_icon" class="fa fa-download" aria-hidden="true"></i></a>
+        </div>
+        <div id="noDownload" style="text-align: center;">
+            <span style="font-style: italic;">Download Not Required / <br> No Downloadable File or Directory</span><br><br>
+            <button type="button" id="nodown_btn" class="btn btn-secondary" disabled>Download &nbsp; &nbsp;<i id="down_icon" class="fa fa-file-archive-o" aria-hidden="true"></i></button>
+        </div>
+
+    </div>
+
+    <script src="jszip/dist/jszip.js"></script>
+    <script src="jszip/FileSaver.min.js"></script>
+    <script src="popup.js"></script>
+
+</body>
+
+</html>

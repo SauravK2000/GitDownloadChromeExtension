@@ -1,0 +1,40 @@
+{
+    "name": "PG Github Downloader",
+    "version": "1.0",
+    "description": "Allows you to download any specified folder or file in any Github Repo",
+    "manifest_version": 2,
+    "page_action": {
+        "default_popup": "popup.html",
+        "default_icon": "img/pggit128.png",
+        "default_title": "PG Github Downloader"
+    },
+    "icons": {
+        "16": "img/pggit16.png",
+        "48": "img/pggit48.png",
+        "128": "img/pggit128.png"
+    },
+    "commands": {
+        "_execute_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+G",
+                "mac": "MacCtrl+Shift+G"
+            },
+            "description": "Opens popup.html"
+        }
+    },
+    "content_scripts": [{
+        "matches": ["https://github.com/*"],
+        "js": ["jquery-3.6.0.min.js", "contentScript.js"],
+        "css": ["content.css"]
+    }],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "permissions": [
+        "https://github.com/*",
+        "storage",
+        "contextMenus",
+        "tabs"
+    ]
+}

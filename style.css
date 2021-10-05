@@ -1,0 +1,59 @@
+.note {
+    font-style: italic;
+    color: gray;
+    font-size: 13px;
+    /* position: absolute;
+    bottom: 0;
+    left: 0; */
+    /* padding-left: 10px; */
+}
+
+.note {
+    font-style: italic;
+    color: gray;
+    font-size: 12px;
+    text-align: center;
+}
+
+#none {
+    margin-top: 20px;
+    text-align: center;
+}
+
+body {
+    height: 200px;
+    overflow: hidden;
+}
+
+.scrollmenu {
+    margin-top: 3px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: gainsboro;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+#download_link_btn {
+    width: 148.31px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#down_btn_file {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#down_btn {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+* {
+    box-sizing: unset;
+}
+
+.row {
+    flex-wrap: nowrap;
+}
